@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="ISO 8859-1">
+<title>Array of Json object</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	foodlist=[
+		{
+			"foodId":101,
+			"foodName":"Pizza",
+			"foodCategory":{
+				"Type":"veg",
+				"Size":"medium"
+			},
+		 "foodPrice":356.85
+		},
+		{
+			"foodId":102,
+			"foodName":"Burger",
+			"foodCategory":{
+				"Type":"Nonveg",
+				"Size":"medium"
+			},
+		   "foodPrice":265.85
+		},
+		{
+			"foodId":103,
+			"foodName":"Biryani",
+			"foodCategory":{
+				"Type":"veg",
+				"Size":"Half"
+			},
+		   "foodPrice":350.85
+		}
+	]
+	document.write("<table width=80% border=1>")
+	document.write("<caption>Food</caption>")
+	document.write("<tr><th rowspan=2>Id</th><th rowspan=2>Name</th><th colspan=2>Category</th><th rowspan =2?Price</th></tr>")
+	document.write("<tr><th>Type </th><th>Size</th></tr>")
+	for(foodIndex=0;foodIndex<foodlist.length;foodIndex++)
+	{
+		document.write("<tr>")
+		document.write("<td>"+foodlist[foodIndex].foodId+"</td>")
+		document.write("<td>"+foodlist[foodIndex].foodName+"</td>")
+		document.write("<td>"+foodlist[foodIndex].foodCategory.Type"</td>")
+		document.write("<td>"+foodlist[foodIndex].foodcategory.Size+"</td>")
+		document.write("<td>"+foodlist[foodIndex].foodPrice+"</td>")
+	}
+	document.write("</table>")
+	</script>
+</body>
+</html>

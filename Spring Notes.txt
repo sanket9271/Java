@@ -1,0 +1,8 @@
+Steps to create Spring Desktp Application
+
+1.Create Java project 
+2.Import jar file
+3.Create pojo class 
+4.create XML file 
+5.Configure pojo class inXMl
+6.Creat test class
